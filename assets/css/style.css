@@ -1,0 +1,234 @@
+#navbar {
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  transition: top 0.3s;
+}
+
+/* Style the navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+/* 
+#navbar a:hover {
+  background-color:white;
+  color: black;
+} */
+
+.bg-top{
+  height: 85vh;
+  width: 100%;
+  background-image: linear-gradient(to top, #fffbd5, #e9cb94, #d8975e, #c85f3b, #b20a2c);
+
+}
+
+.about{
+  border-radius: 15px;
+  padding: 25px;
+
+}
+
+.icon{
+  color: #b20a2c;
+  margin-right: 15px;
+}
+
+.desc{
+  font-family: 'Muli', sans-serif;
+}
+
+.skillbar {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.skillbar-bar:before {
+  
+  border-radius: 10px;
+    background: #eee;
+    content: "";
+    height: 10px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.skillbar-bar {
+  border-radius: 10px;
+    height: 10px;
+    width: 0px;
+    background: #fffbd5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #b20a2c, #fffbd5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #b20a2c, #fffbd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition-property: width, background-color;
+}
+
+.skillbar-title {
+    color: #323232;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.skill-bar-percent {
+    float: right;
+    display: inline-block;
+    color: #323232;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* CENTERING ONLY */
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway|Reenie+Beanie);
+
+
+.work-img {
+  width: 100%;
+}
+
+.caption,
+h1,
+.date {
+  margin: 0;
+  text-align: center;
+}
+
+.caption,
+h1 {
+  font-size: 1.6rem;
+  padding: 10px 10px 0 10px;
+  color: #b20a2c;
+}
+
+.date {
+  font-size: 0.75em;
+}
+
+.description {
+  font-size: 1.2rem;
+  padding: 0 20px 20px 20px;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.container {
+  perspective: 1000px;
+  display: inline-block;
+  margin: 3%;
+}
+
+.container:hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.container,
+.front,
+.back {
+  width: 400px;
+  height: 400px;
+}
+
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.front {
+  z-index: 2;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+#content {
+  text-align: center;
+}
+
+.location{
+    margin-top: 30px;
+    font-size: 13pt;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+header {
+  position: relative;
+  background-color: black;
+  height: 85vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to top, #fffbd5, #e9cb94, #d8975e, #c85f3b, #b20a2c);
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
