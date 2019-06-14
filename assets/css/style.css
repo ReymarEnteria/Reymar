@@ -23,7 +23,7 @@
 } */
 
 .bg-top{
-  height: 85vh;
+  height: 100vh;
   width: 100%;
   background-image: linear-gradient(to top, #fffbd5, #e9cb94, #d8975e, #c85f3b, #b20a2c);
 
@@ -103,6 +103,8 @@ background: linear-gradient(to left, #b20a2c, #fffbd5); /* W3C, IE 10+/ Edge, Fi
 
 .work-img {
   width: 100%;
+  border-top-left-radius: 50px; 
+  border-top-right-radius: 50px;
 }
 
 .caption,
@@ -114,7 +116,7 @@ h1,
 
 .caption,
 h1 {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   padding: 10px 10px 0 10px;
   color: #b20a2c;
 }
@@ -130,21 +132,22 @@ h1 {
   text-align: left;
 }
 
-.container {
+.container_flip {
   perspective: 1000px;
   display: inline-block;
   margin: 3%;
 }
 
-.container:hover .flipper {
+.container_flip:hover .flipper {
   transform: rotateY(180deg);
 }
 
-.container,
+.container_flip,
 .front,
 .back {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
+  border-radius: 50px;
 }
 
 .flipper {
@@ -156,11 +159,13 @@ h1 {
 .front,
 .back {
   backface-visibility: hidden;
+  background-color: white;
+  border-radius: 50px;
   position: absolute;
   top: 0;
   left: 0;
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -184,10 +189,11 @@ h1 {
     padding: 20px;
 }
 
+
 header {
   position: relative;
   background-color: black;
-  height: 85vh;
+  height: 100vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
@@ -219,8 +225,8 @@ header .overlay {
   left: 0;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(to top, #fffbd5, #e9cb94, #d8975e, #c85f3b, #b20a2c);
-  opacity: 0.5;
+  background-image: linear-gradient(to bottom, #fffbd5, #e9cb94, #d8975e, #c85f3b, #b20a2c);
+  opacity: 0.4;
   z-index: 1;
 }
 
@@ -231,4 +237,9 @@ header .overlay {
   header video {
     display: none;
   }
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
 }
