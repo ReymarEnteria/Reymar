@@ -5,10 +5,10 @@ window.onscroll = function () {
     if (prevScrollpos > currentScrollPos) {
         document.getElementById("navbar").style.top = "0";
         document.getElementById("navbar").style.backgroundColor = "#b20a2c";
-    } else if(prevScrollpos == 0) {
-        document.getElementById("navbar").style.backgroundColor = "transparent";
+        $('.collapse').collapse('hide');
     }else{
         document.getElementById("navbar").style.top = "-100px";
+        $('.collapse').collapse('hide');
     }
     prevScrollpos = currentScrollPos;
 }
