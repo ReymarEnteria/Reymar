@@ -363,8 +363,11 @@ header .overlay {
   }
 
   #contact form{
-    margin-left: 9%;
+    margin-left: 10%;
   }
   
+  #about .card .card-body .row div img{
+    margin-left: 5%;
+  }
   
 }
