@@ -45,6 +45,12 @@
   font-family: 'Muli', sans-serif;
 }
 
+.skillbar_title{
+  font-size: 1.7rem;
+  padding-bottom: 8%;
+  text-align: center
+}
+
 .skillbar {
   position: relative;
   display: block;
@@ -239,6 +245,19 @@ header .overlay {
   margin-right: 0;
 }
 
+#skills{
+  padding-bottom: 7%;
+}
+
+#skills .row .col-lg-5{
+  padding: 50px;
+}
+
+.parallax-window {
+    min-height: 70vh;
+    background: transparent;
+  }
+
 
 @media screen and (max-width: 990px) {
   #skills {
@@ -362,12 +381,8 @@ header .overlay {
     transform: rotateY(180deg);
   }
 
-  #contact form{
-    margin-left: 10%;
+  .message{
+    width: 100%;
+
   }
-  
-  #about .card .card-body .row div img{
-    margin-left: 5%;
-  }
-  
 }
